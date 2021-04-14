@@ -34,25 +34,25 @@ void setup () {
 void loop () {
   //con "now" lo qeu hace esuna especie de SUB-variable
   //donde guarda toda la info que llega del modulo
-  DateTime now = modulo_rtc.now();
+  DateTime ahora = modulo_rtc.now();
 
   //una vez que leimos el sensor, ya todo queda guardado
   //en la variable "now", para leer los SUB-campos de "now"
   //usamos el "punto" y colocamos "año", "mes", "dia","hora"
   //"minuto", "segundo", todo en ingles.
-  Serial.print(now.year());
+  Serial.print(ahora.year());
   Serial.print('/');
-  Serial.print(now.month());
+  Serial.print(ahora.month());
   Serial.print('/');
-  Serial.print(now.day());
+  Serial.print(ahora.day());
   Serial.print(" (");
-  Serial.print(DiasDeLaSemana[now.dayOfTheWeek()]);
+  Serial.print(DiasDeLaSemana[ahora.dayOfTheWeek()]);
   Serial.print(") ");
-  Serial.print(now.hour());
+  Serial.print(ahora.hour());
   Serial.print(':');
-  Serial.print(now.minute());
+  Serial.print(ahora.minute());
   Serial.print(':');
-  Serial.print(now.second());
+  Serial.print(ahora.second());
   Serial.println();
 
   delay(1000);
