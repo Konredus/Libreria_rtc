@@ -37,7 +37,7 @@ void loop () {
   DateTime ahora = modulo_rtc.now();
 
   //una vez que leimos el sensor, ya todo queda guardado
-  //en la variable "now", para leer los SUB-campos de "now"
+  //en la variable "ahora", para leer los SUB-campos de "ahora"
   //usamos el "punto" y colocamos "año", "mes", "dia","hora"
   //"minuto", "segundo", todo en ingles.
   Serial.print(ahora.year());
